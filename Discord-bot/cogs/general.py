@@ -122,13 +122,6 @@ class General(commands.Cog):
         if message.content == "!":
             await message.channel.send(HELP_TEXT)
             return
-
-        # Custom responses
-        responses = {
-            "!hello": "Hello! 👋",
-            "!vaporclub": "https://open.spotify.com/playlist/52cc4UPXBRFBHcrPFLbckf?si=90bff350651f4626",
-            "!invite": "https://discord.gg/sRmsVRNNRv"
-        }
         
         if message.content in responses:
             await message.channel.send(responses[message.content])
